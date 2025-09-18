@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;              /* Scrollbar width */
+  height: 10px;             /* For horizontal scroll */
+}
+
+::-webkit-scrollbar-track {
+  background: #101923;      /* Matches app background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #223449;      /* Matches card/nav color */
+  border-radius: 10px;
+  border: 2px solid #101923; /* Creates gap effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d405a;      /* Slightly lighter on hover */
+}
+
+::-webkit-scrollbar-corner {
+  background: #101923;      /* Corner for both scrolls */
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #223449 #101923;
+}
